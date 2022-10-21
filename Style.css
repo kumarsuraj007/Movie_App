@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Main-Container {
+  background: linear-gradient(
+    40deg,
+    rgba(112, 112, 112, 0.38) 11%,
+    rgba(255, 255, 255, 0.78) 84%
+  );
+  height: 100%;
+}
+
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.5);
+  transition: 0.3s;
+  width: 280px;
+  height: 520px;
+  background: #fff;
+}
+
+.card:hover {
+  box-shadow: 0 9px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.Heading-2 {
+  margin-top: 5px;
+}
+
+.Heading-1 {
+  font-size: 20px;
+}
+
+/* Search Bar  */
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+  height: 50px;
+}
+
+.topnav a.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+  margin-right: 10px;
+}
+
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 500px) {
+  .topnav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+  }
+
+  .Main-Container {
+    background: linear-gradient(
+      40deg,
+      rgba(112, 112, 112, 0.38) 11%,
+      rgba(255, 255, 255, 0.78) 84%
+    );
+    height: 100%;
+  }
+
+  .topnav span {
+    font-size: 25px !important;
+    margin-top: 9px !important;
+    display: inline-block;
+    letter-spacing: 3px;
+  }
+}
+
+.topnav span {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding-left: 10px;
+}
