@@ -1,6 +1,6 @@
 const MovieBox = document.querySelector(".Container");
 const SearchBox = document.querySelector(".SearchBox");
-const Btn = document.querySelector(".Search-Btn");
+const Btn = document.querySelector("#Search-Btn");
 
 // CALLING API
 const FetchApi = async (value) => {
@@ -16,9 +16,8 @@ const ShowMovie = (Response) => {
   Response.forEach((Item) => {
     const box = document.createElement("div");
     box.classList.add("Show-Data");
-    box.innerHTML = `
-        <div class="Show-Data">
-         <div class="card">
+    box.innerHTML = `<div class="Show-Data">
+              <div class="card">
                 <img src="${Item.Poster}" alt="${Item.Title}" style="width:280PX">
                 <div class="container">
                   <h2 class="Heading-1">${Item.Title}</h2>
@@ -26,8 +25,7 @@ const ShowMovie = (Response) => {
                   <h4>${Item.Type}</h4>
                 </div>
               </div>
-              </div>
-      `;
+              </div>`;
     MovieBox.appendChild(box);
   });
 };
